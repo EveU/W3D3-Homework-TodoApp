@@ -1,0 +1,8 @@
+  <h5>Task name:</h5>
+  <p><%= @task['name'] %></p>
+  <h5>Task details:</h5>
+  <p><%= @task['details'] %></p>
+  <a href="/tasks/<%= @task['id'] %>/edit">Edit Task</a>
+  <form action="/tasks/<%= @task['id'] %>/delete" method='post'>  
+    <button>Delete Task</button>
+  </form>
